@@ -40,47 +40,6 @@ const postdata = [
   {
     title: 'Curabitur at ipsum ac tellus semper interdum.',
     user_id: 5
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    user_id: 3
-  },
-  {
-    title: 'Morbi odio odio, elementum eu, interdum eu, tincidunt in, leo.',
-    user_id: 10
-  },
-  {
-    title: 'Donec dapibus.',
-    user_id: 8
-  },
-  {
-    title: 'Nulla tellus.',
-    user_id: 3
-  },
-  {
-    title: 'Cras mi pede, malesuada in, imperdiet et, commodo vulputate, justo.',
-    user_id: 3
-  },
-  {
-    title:
-      'Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Mauris viverra diam vitae quam.',
-    user_id: 7
-  },
-  {
-    title: 'In hac habitasse platea dictumst.',
-    user_id: 6
-  },
-  {
-    title: 'Etiam justo.',
-    user_id: 4
-  },
-  {
-    title: 'Nulla ut erat id mauris vulputate elementum.',
-    user_id: 6
-  },
-  {
-    title: 'Integer pede justo, lacinia eget, tincidunt eget, tempus vel, pede.',
-    user_id: 7
   }
 ];
 
