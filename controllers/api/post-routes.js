@@ -20,10 +20,6 @@ router.get('/', (req, res) => {
                     model: User,
                     attributes: ['username']
                 }
-            },
-            {
-                model: User,
-                attributes: ['username']
             }
         ]
     })
