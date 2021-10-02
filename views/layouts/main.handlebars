@@ -17,7 +17,11 @@
     <header>
         <nav class="navbar navbar-light bg-light">
             <span class="navbar-brand mb-0 h1">Tech Blog</span>
+            {{#if loggedIn}}
+            <button id="logout" class="btn-no-style">logout</button>
+            {{else}}
             <a href="/login" class="btn btn-light" role="button">Login</a>
+            {{/if}}
         </nav>
     </header>
     <main>
@@ -33,6 +37,9 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
+    {{#if loggedIn}}
+    <script src="/javascript/logout.js"></script>
+    {{/if}}
 </body>
 
 </html>
