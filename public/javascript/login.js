@@ -1,6 +1,5 @@
 $('#login-submit').click(async function (e) {
     e.preventDefault();
-    console.log('login click');
 
     const email = $('#email-login').val().trim();
     const password = $('#password-login').val().trim();
@@ -16,7 +15,7 @@ $('#login-submit').click(async function (e) {
         });
 
         if (response.ok) {
-            document.location.replace('/');
+            document.location.replace('/dashboard');
         } else {
             alert(response.statusText);
         }

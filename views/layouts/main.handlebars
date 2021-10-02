@@ -20,7 +20,8 @@
             <a href="/" class="navbar-brand mb-0 h1">Tech Blog</a>
             </h1>
             {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">logout</button>
+              <a href="/dashboard" class="btn btn-light" role="button">Dashboard</a>
+            <button id="logout" class="btn-no-style">Logout</button>
             {{else}}
             <a href="/login" class="btn btn-light" role="button">Login</a>
             {{/if}}
