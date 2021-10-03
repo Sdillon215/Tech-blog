@@ -12,10 +12,11 @@ const sess = {
     secret: 'Super secret secret',
     cookie: {},
     resave: false,
-    saveUninitialized: true,
+    saveUninitialized: false,
     store: new SequelizeStore({
         db: sequelize
-    })
+    }),
+    // expires: new Date(Date.now() + (30000))
 }
 
 app.use(session(sess));
