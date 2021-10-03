@@ -1,7 +1,15 @@
 $('.comment-form').submit(async function (e) {
     e.preventDefault();
-    console.log('click');
-    const comment_text = $('textarea').val().trim();
+    var comment_text = '';
+    const comment = $('.comment-form').attr('name');
+
+    if (comment === 'single-post') {
+        console.log('comment from single post page');
+        var comment_text = $('#new-comment').val().trim();
+    }
+    if (comment === 'edit-post') {
+        var comment_text = $('#edit-comment').val().trim();
+    }
 
     const post_id = window.location.toString().split('/')[
         window.location.toString().split('/').length - 1
@@ -21,7 +29,12 @@ $('.comment-form').submit(async function (e) {
         });
 
         if (response.ok) {
-            document.location.reload();
+            if (comment === 'single-post') {
+                document.location.reload();
+            }
+            if (comment === 'edit-post') {
+                document.location.replace('/dashboard');
+            }
         } else {
             alert(response.statusText);
         }

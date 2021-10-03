@@ -1,13 +1,13 @@
     {{> blog-info post}}
 
 {{#if loggedIn}}
-<form class="comment-form">
+<form class="comment-form" name="single-post">
     <div>
-        <textarea class="comment-body"></textarea>
+        <textarea id="new-comment"></textarea>
     </div>
 
     <div>
-        <button id="comment-submit" type="submit">add comment</button>
+        <button type="submit">add comment</button>
     </div>
 </form>
 {{/if}}
