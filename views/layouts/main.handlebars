@@ -13,17 +13,17 @@
     <link rel="stylesheet" href="/stylesheets/style.css">
 </head>
 
-<body>
+<body class="bg-secondary">
     <header>
         <nav class="navbar navbar-light bg-light">
             <h1>
-                <a href="/" class="navbar-brand mb-0 h1">Tech Blog</a>
+                <a href="/" class="navbar-brand badge badge-secondary">Tech Blog</a>
             </h1>
-            <a href="/dashboard" class="btn btn-light" role="button">Dashboard</a>
+            <a href="/dashboard" class="btn btn-info" role="button">Dashboard</a>
             {{#if loggedIn}}
-            <button id="logout" class="btn-no-style">Logout</button>
+            <button id="logout" class="btn btn-info">Logout</button>
             {{else}}
-            <a href="/login" class="btn btn-light" role="button">Login</a>
+            <a href="/login" class="btn btn-info" role="button">Login</a>
             {{/if}}
         </nav>
     </header>

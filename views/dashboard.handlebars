@@ -1,34 +1,35 @@
 <section>
   <h2>Create New Post</h2>
 
-  <form class="new-post-form">
-    <div>
+  <form class="new-post-form m-5">
+    <div class="form-group">
       <label for="post-title">Blog Title</label>
-      <input type="text" id="post-title" name="post-title" />
+      <input class="form-control" type="text" id="post-title" name="post-title" />
     </div>
-    <div>
+    <div form-group>
       <label for="blog-text">Text</label>
-      <input id="blog-text" name="blog-text" />
+      <textarea class="form-control" id="blog-text" name="blog-text"></textarea>
     </div>
-    <button id="blog-submit" type="submit" class="btn">Create</button>
+    <div class="form-group">
+      <button id="blog-submit" type="submit" class="btn btn-primary">Create</button>
+    </div>
   </form>
 </section>
 
 {{#if posts.length}}
 <section>
   <h2>Your Blog Posts</h2>
-  <ol>
+    <div class="post-list card">
     {{#each posts as |post|}}
-    <li>
+    <div class="card-body">
       {{> blog-info post}}
       <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
-    </li>
+    </div>
     {{/each}}
-  </ol>
+  </div>>
 </section>
 {{/if}}
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-        crossorigin="anonymous"></script>
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
 <script src="/javascript/add-post.js"></script>
