@@ -1,18 +1,23 @@
-    {{> blog-info post}}
-
+<div class="post-list card">
+    <div class="card-body">
+      {{> blog-info post}}
+    </div>
+  </div>
 {{#if loggedIn}}
-<form class="comment-form" name="single-post">
-    <div>
-        <textarea id="new-comment"></textarea>
+<form class="comment-form mt-2" name="single-post">
+    <div class="form-group">
+        <textarea class="form-control" id="new-comment"></textarea>
     </div>
 
-    <div>
-        <button type="submit">add comment</button>
+    <div class="form-group">
+        <button class="btn btn-info" type="submit">add comment</button>
     </div>
 </form>
 {{/if}}
 
+<div class="m-2">
 {{> comments post.comments}}
+</div>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
     integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"

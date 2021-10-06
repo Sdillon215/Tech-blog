@@ -1,6 +1,7 @@
-      <h5 class="title card-title">
-        <a href="/post/{{id}}">{{title}}</a>
-        </h5>
-        <h6 class="card-subtitle">Blog by {{user.username}} on {{format_date created_at}}</h6>
-        <p class="card-text">{{post_text}}</p>
-        <a class="card-link" href="/post/{{id}}">{{comments.length}} {{format_plural "comment" comments.length}}</a>
+<h5 class="title card-title">
+  <a href="/post/{{id}}">{{title}}</a>
+</h5>
+<h6 class="card-subtitle">Blog by {{user.username}} on {{format_date created_at}}</h6>
+<p class="card-text">{{post_text}}</p>
+<a class="card-link btn btn-info" href="/post/{{id}}">{{comments.length}} {{format_plural "comment"
+  comments.length}}</a>
