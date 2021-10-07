@@ -27,5 +27,8 @@ This application is a social media website where users can view, create, and com
 ## Repository
 https://github.com/Sdillon215/Tech-blog
 
+## Deployed Heroku link
+https://limitless-harbor-51312.herokuapp.com/
+
 ## Contribution
 Made by Sean
